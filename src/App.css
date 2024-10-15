@@ -1,38 +1,211 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a0000;
+  color: #ffffff;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  max-width: 100%;
   min-height: 100vh;
+  padding: 20px;
+  background-color: #2a0000;
+}
+
+nav {
+  background-color: #3a0000;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffcccc;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff4500;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for Team page */
+.team {
+  background-color: #3a0000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+.team h1 {
+  text-align: center;
+  color: #ff6666;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #4a0000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member h2 {
+  color: #ff9999;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  color: #ffcccc;
+}
+
+/* Styles for Job Application page */
+.job-application {
+  background-color: #3a0000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+.job-application h1 {
+  text-align: center;
+  color: #ff6666;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.job-application p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffcccc;
+}
+
+.apply-button {
+  display: block;
+  width: 200px;
+  margin: 30px auto;
+  background-color: #ff4500;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #ff6a33;
+}
+
+/* Poker card suits decoration */
+.team::before,
+.job-application::before {
+  content: "♠ ♥ ♣ ♦";
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  color: #ff9999;
+  margin-bottom: 20px;
+}
+
+.team::after,
+.job-application::after {
+  content: "♦ ♣ ♥ ♠";
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  color: #ff9999;
+  margin-top: 20px;
+}
+
+/* Home page specific styles */
+.home {
+  background-color: #3a0000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+}
+
+.home h1 {
+  text-align: center;
+  color: #ff6666;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.home p {
+  color: #ffcccc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #ff9999;
+}/* ... existing styles ... */
+
+.linkedin-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077b5;
+  transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  color: #00a0dc;
+}
+
+.team-member {
+  /* ... existing styles ... */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* ... rest of the styles ... */
