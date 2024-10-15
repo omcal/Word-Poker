@@ -1,11 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import teamImage from '../images/team-page.jpeg';
+import '../Teams.css';
 
-function TeamMember({ name, role, image, linkedIn }) {
+function TeamMember({ name, role, linkedIn }) {
   return (
     <div className="team-member">
-      <img src={image} alt={name} className="team-member-image" />
       <h2>{name}</h2>
       <p>{role}</p>
       <a href={linkedIn} target="_blank" rel="noopener noreferrer" className="linkedin-link">
@@ -16,42 +17,39 @@ function TeamMember({ name, role, image, linkedIn }) {
 }
 
 function Team() {
-  return (
-    <div className="team">
-      <h1>Our Word  Flush Team</h1>
-      <p className="team-intro">Meet the Aces behind Word Poker!</p>
-      <div className="team-hierarchy">
-        <div className="founders">
-          <TeamMember
-            name="Anıl Tekeli"
-            role="Co-Founder and Full Stack Developer"
-            image="https://via.placeholder.com/150"
-            linkedIn="https://www.linkedin.com/in/aniltekeli/"
-          />
-          <TeamMember
-            name="Gökhan Demirkan"
-            role="Co-founder and Game Designer"
-            image="https://via.placeholder.com/150"
-          />
-        </div>
-        <div className="engineering">
-          <TeamMember
-            name="Ömer Işıldak"
-            role="Full Stack Developer"
-            image="https://via.placeholder.com/150"
-            linkedIn="https://www.linkedin.com/in/omerisildak/"
-          />
-        </div>
-        <div className="engineering">
-          <TeamMember
-            name="M. Ertuğrul Erdem"
-            role="Music and Art"
-            image="https://via.placeholder.com/150"
-          />
+    return (
+      <div className="team">
+        <h1>Our Word Flush Team</h1>
+        <p className="team-intro">Meet the Aces behind Word Poker!</p>
+        <div className="team-hierarchy">
+          <div className="team-members">
+            <TeamMember
+              name="Anıl Tekeli"
+              role="Co-Founder and Full Stack Developer"
+              linkedIn="https://www.linkedin.com/in/aniltekeli/"
+            />
+            <TeamMember
+              name="Gökhan Demirkan"
+              role="Co-founder and Game Designer"
+            />
+          </div>
+          <div className="team-image">
+            <img src={teamImage} alt="Word Flush Team" />
+          </div>
+          <div className="team-members">
+            <TeamMember
+              name="Ömer Işıldak"
+              role="Junior Full Stack Developer"
+              linkedIn="https://www.linkedin.com/in/omerisildak/"
+            />
+            <TeamMember
+              name="M. Ertuğrul Erdem"
+              role="Music and Art"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
 
-export default Team;
+  export default Team;

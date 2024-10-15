@@ -1,0 +1,68 @@
+.team-image {
+    margin-left: auto;
+    max-width: 200px; /* Reduced from 300px to 200px */
+    width: 100%;
+  }
+  
+  .team-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }.team-hierarchy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .team-member {
+    background-color: #ff0000; /* Red background */
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white; /* To ensure text is visible on red background */
+  }
+  
+  .team-image {
+    max-width: 200px;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  
+  .team-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .team-hierarchy {
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
+    justify-content: space-between; /* Adds space between members and image */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 2rem;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Changed from center to flex-start */
+    gap: 2rem;
+  }
+    
+  .team-image {
+    max-width: 700px;
+    width: 100%;
+    margin: 0; /* Removed top and bottom margin */
+    align-self: flex-start; /* Aligns image to the top */
+  }
+  
