@@ -18,37 +18,35 @@ function TeamMember({ name, role, image, linkedIn }) {
 function Team() {
   return (
     <div className="team">
-      <h1>Our Word Royal Flush Team</h1>
-      <p className="team-intro">Meet the aces behind Word Poker!</p>
+      <h1>Our Word  Flush Team</h1>
+      <p className="team-intro">Meet the Aces behind Word Poker!</p>
       <div className="team-hierarchy">
         <div className="founders">
           <TeamMember
-            name="Anıl"
+            name="Anıl Tekeli"
             role="Co-Founder and Full Stack Developer"
             image="https://via.placeholder.com/150"
-            linkedIn="https://www.linkedin.com/in/anil-profile/"
+            linkedIn="https://www.linkedin.com/in/aniltekeli/"
           />
           <TeamMember
-            name="Gökhan"
+            name="Gökhan Demirkan"
             role="Co-founder and Game Designer"
             image="https://via.placeholder.com/150"
-            linkedIn="https://www.linkedin.com/in/gokhan-profile/"
           />
         </div>
         <div className="engineering">
           <TeamMember
-            name="Ömer"
+            name="Ömer Işıldak"
             role="Full Stack Developer"
             image="https://via.placeholder.com/150"
-            linkedIn="https://www.linkedin.com/in/omer-profile/"
+            linkedIn="https://www.linkedin.com/in/omerisildak/"
           />
         </div>
         <div className="engineering">
           <TeamMember
-            name="Ertuğrul"
+            name="M. Ertuğrul Erdem"
             role="Music and Art"
             image="https://via.placeholder.com/150"
-            linkedIn="https://www.linkedin.com/in/Ertugrul-profile/"
           />
         </div>
       </div>
