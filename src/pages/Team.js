@@ -18,19 +18,19 @@ function TeamMember({ name, role, image, linkedIn }) {
 function Team() {
   return (
     <div className="team">
-      <h1>Our Word Flush Team</h1>
+      <h1>Our Word Royal Flush Team</h1>
       <p className="team-intro">Meet the aces behind Word Poker!</p>
       <div className="team-hierarchy">
         <div className="founders">
           <TeamMember
             name="Anıl"
-            role="Co-founder"
+            role="Co-Founder and Full Stack Developer"
             image="https://via.placeholder.com/150"
             linkedIn="https://www.linkedin.com/in/anil-profile/"
           />
           <TeamMember
             name="Gökhan"
-            role="Co-founder"
+            role="Co-founder and Game Designer"
             image="https://via.placeholder.com/150"
             linkedIn="https://www.linkedin.com/in/gokhan-profile/"
           />
@@ -38,9 +38,17 @@ function Team() {
         <div className="engineering">
           <TeamMember
             name="Ömer"
-            role="Founding Engineer"
+            role="Full Stack Developer"
             image="https://via.placeholder.com/150"
             linkedIn="https://www.linkedin.com/in/omer-profile/"
+          />
+        </div>
+        <div className="engineering">
+          <TeamMember
+            name="Ertuğrul"
+            role="Music and Art"
+            image="https://via.placeholder.com/150"
+            linkedIn="https://www.linkedin.com/in/Ertugrul-profile/"
           />
         </div>
       </div>
