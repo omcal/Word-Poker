@@ -39,7 +39,7 @@ function Team() {
           <div className="team-members">
             <TeamMember
               name="Ömer Işıldak"
-              role="Junior Full Stack Developer"
+              role="Founding Backend Developer"
               linkedIn="https://www.linkedin.com/in/omerisildak/"
             />
             <TeamMember
