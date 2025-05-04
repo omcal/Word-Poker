@@ -20,7 +20,6 @@ function Team() {
     return (
       <div className="team">
         <h1>Our Word Flush Team</h1>
-        <p className="team-intro">Meet the Aces behind Word Poker!</p>
         <div className="team-hierarchy">
           <div className="team-members">
             <TeamMember
